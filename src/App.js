@@ -35,7 +35,7 @@ class App extends React.Component {
   render(){
     return (
         <div className="container">
-          <div className="statement" onClick={this.toggleImage}>{this.state.statement}</div>
+          <button className="statement" onClick={this.toggleImage}>{this.state.statement}</button>
           <div className="image-container"><img src={this.state.imgUrl} alt="drake"/></div>
         </div>
     )
