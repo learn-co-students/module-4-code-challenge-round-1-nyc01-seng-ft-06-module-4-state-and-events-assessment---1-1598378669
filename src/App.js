@@ -7,13 +7,9 @@ import Images from './Images.js'
 class App extends Component {
   render() {
   return ( 
-    <>
-    <h1>You Can Do This!</h1>
-    
     
     <Images />
-    
-    </>
+   
     )
   }
 }
