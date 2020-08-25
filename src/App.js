@@ -7,7 +7,7 @@ class App extends React.Component {
   state = {flag: "yes"}
   
   onclickHandler = () => {
-    this.setState(previousState => {return previousState.flag === "yes" ? {flag:"no"} : {flag:"no"}})
+    this.setState(previousState => {return previousState.flag === "yes" ? {flag:"no"} : {flag:"yes"}})
   }
   
   render() {
