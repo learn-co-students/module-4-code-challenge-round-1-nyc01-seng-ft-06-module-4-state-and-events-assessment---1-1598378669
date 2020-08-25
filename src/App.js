@@ -3,15 +3,12 @@ import './App.css';
 import Drake from './drake'
 import {yes,no} from './objects'
 
-function object(){
 
-
-}
 
 
 function App() {
   return <div>
-		<h1>You Can Do This!</h1>;
+		<h1>You Can Do This!</h1>
     <Drake data = {[yes,no]} />
 	</div>
 }
