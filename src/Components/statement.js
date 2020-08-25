@@ -1,11 +1,11 @@
-import React from 'react';
+// import React from 'react';
 
-class Statement extends React.Component {
+// class Statement extends React.Component {
 
-    render(){
-       return <h1>Statement {this.props.value}</h1>
-    }
+//     render(){
+//        return <h1>Statement {this.props.value}</h1>
+//     }
 
-}
+// }
 
-export default Statement;
+// export default Statement;

@@ -1,20 +1,25 @@
-import React from 'react';
+// import React from 'react';
+// import Main from '../Containers/main'
+// class Image extends React.Component {
+//     // constructor(props){
+//     //     super(props)
+//     //     this.imageState = ''
+//     // }
+//     state = {
+//         hasBeenClicked: false
+//     }
 
-class Image extends React.Component {
+//     // clickHandler = () => {
+//     //     this.setState({ hasBeenClicked: !this.state.hasBeenClicked }, () => {
+//     //         this.imageState = this.state.hasBeenClicked
+//     //         console.log(this.imageState)
+//     //     });
+//     // }
 
-    state = {
-        hasBeenClicked: false
-    }
+//     render(){
+//         // console.log(Main.clickHandler)
+//         return (<h1>Image {this.props.value}</h1>)
+//      }
+// }
 
-    // clickHandler = () => {
-    //     console.log(this.props)
-    //     this.setState({ hasBeenClicked: !this.state.hasBeenClicked }, () => console.log(this.state.hasBeenClicked));
-    // }
-
-    render(){
-        console.log(this.props)
-        return <h1 onClick={this.props.clickHandler}>Image {this.props.value}</h1>
-     }
-}
-
-export default Image;
+// export default Image;
