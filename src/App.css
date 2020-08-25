@@ -1,5 +1,17 @@
-.App {
+* {
   text-align: center;
+  background-color: #282c34;
+}
+
+h1{
+  background-color: #282c34;
+  color: white;
+}
+
+#root{
+  margin-top: 100px;
+  border: 4px dotted white;
+  border-radius: 50px
 }
 
 .App-logo {
