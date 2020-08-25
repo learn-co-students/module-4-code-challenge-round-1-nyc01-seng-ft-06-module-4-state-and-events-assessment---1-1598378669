@@ -23,18 +23,18 @@ class App extends React.Component {
           <h2>{statement}</h2>
           <img onClick={this.clickHandler}src={image}/>
         </div>
-      )
+      );
     } else {
-      image = no["no-image"]
-      statement = no["no-statement"]
+        image = no["no-image"]
+        statement = no["no-statement"]
       
       return (
         <div>
           <h2>{statement}</h2>
           <img onClick={this.clickHandler}src={image}/>
         </div>
-      )
-    }  
+      );
+    }; 
   }
 
   clickHandler = () => {
