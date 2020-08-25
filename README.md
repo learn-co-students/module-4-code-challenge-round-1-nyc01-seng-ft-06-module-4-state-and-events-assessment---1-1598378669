@@ -6,7 +6,7 @@
 
    > `{"yes-image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQptvy1IuxkMzOgcsR_uWucIkwE67jI04GfUg&usqp=CAU", "yes-statement": "google the answer"}`
    
-   > `{"no-image": "https://thumbs.gfycat.com/ElaborateShinyBernesemountaindog-size_restricted.gif", "no-statment": "learn problem solving, syntax, reading documentation"  }`
+   > `{"no-image": "https://thumbs.gfycat.com/ElaborateShinyBernesemountaindog-size_restricted.gif", "no-statement": "learn problem solving, syntax, reading documentation"  }`
 
 - Your goal is to make your app look like the attached wireframe. There should be a statement and underneath that statement is the applicable "yes" or "no" image. 
 
