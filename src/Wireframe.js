@@ -9,14 +9,20 @@ class Wireframe extends React.Component{
      let click = this.state.clicked
      this.setState({clicked:!click}, ()=>{console.log(this.state.clicked)})
     }
+
+    changeStatement=()=>{
+        if (this.state.clicked===true){
+            return yes["yes-statement"]
+        } else {
+            return no["no-statement"] 
+        }
+    }
     
     render(){
-        // console.log(yes["yes-image"])
-        // console.log(this.state.clicked)
         
         return(
-            <>
-            
+        <>
+            <h2>{this.changeStatement()}</h2>
             <img onClick={this.toggleImage} src={this.state.clicked?`${yes["yes-image"]}`:`${no["no-image"]}`}/>
         </>
         )
