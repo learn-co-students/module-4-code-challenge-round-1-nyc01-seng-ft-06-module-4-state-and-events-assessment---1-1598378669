@@ -1,8 +1,9 @@
 import React from 'react';
+import Main from './Containers/main';
 import './App.css';
 
 function App() {
-  return <h1>You Can Do This!</h1>;
+  return (<Main />);
 }
 
 export default App;
