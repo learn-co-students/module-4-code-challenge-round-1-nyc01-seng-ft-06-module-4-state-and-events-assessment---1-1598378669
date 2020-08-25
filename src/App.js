@@ -20,7 +20,7 @@ class App extends React.Component {
     return (
       <React.Fragment>
         {this.state.status ? <h1>{yes["yes-statement"]}</h1> : <h1>{no["no-statment"]}</h1>}
-        <img src={this.state.status ? yes["yes-image"] : no["no-image"]} onClick={this.handleClick} alt={this.status}/>
+        <img src={this.state.status ? yes["yes-image"] : no["no-image"]} onClick={this.handleClick} alt="drake"/>
       </React.Fragment>
     )
   }
