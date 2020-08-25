@@ -1,5 +1,6 @@
 // import React from 'react';
 import React, { Component } from "react";
+import '../App.css'
 
 
 class Content extends Component {
@@ -20,7 +21,7 @@ class Content extends Component {
     return (
         <div>
         {this.state.clicked ? <h2>{yes_data["yes-statement"]}</h2> : <h2>{no_data["no-statement"]}</h2>}
-        {this.state.clicked? <img onClick={this.clickHandler} alt="me" src={yes_data["yes-image"]}/> : <img onClick={this.clickHandler} alt="me" src={no_data["no-image"]}/>}/> 
+        {this.state.clicked? <img className="drake" onClick={this.clickHandler} alt="me" src={yes_data["yes-image"]}/> : <img className="drake" onClick={this.clickHandler} alt="me" src={no_data["no-image"]}/>} 
         </div>
         )
 
