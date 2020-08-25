@@ -20,9 +20,9 @@ class App extends React.Component {
 
   render(){  
     return (
-      <div>
+      <div className=".App">
         {this.state.condition === "yes" ? <h3>{yes["yes-statement"]}</h3> : <h3>{no["no-statement"]}</h3>}
-        {this.state.condition === "yes" ? <img alt={yes["yes-statement"]} src={yes["yes-image"]} onClick={this.clickHandler} />: <img alt={no["no-statement"]} src={no["no-image"]} onClick={this.clickHandler} />}
+        {this.state.condition === "yes" ? <img alt={yes["yes-statement"]} src={yes["yes-image"]} onClick={this.clickHandler} />: <img  alt={no["no-statement"]} src={no["no-image"]} onClick={this.clickHandler} />}
       </div>
     )
   }
