@@ -6,12 +6,14 @@ class Image extends React.Component {
         hasBeenClicked: false
     }
 
-    clickHandler = () => {
-        this.setState({ hasBeenClicked: !this.state.hasBeenClicked }, () => console.log(this.state.hasBeenClicked));
-    }
+    // clickHandler = () => {
+    //     console.log(this.props)
+    //     this.setState({ hasBeenClicked: !this.state.hasBeenClicked }, () => console.log(this.state.hasBeenClicked));
+    // }
 
     render(){
-        return <h1 onClick={this.clickHandler}>Image {this.props.value}</h1>
+        console.log(this.props)
+        return <h1 onClick={this.props.clickHandler}>Image {this.props.value}</h1>
      }
 }
 
