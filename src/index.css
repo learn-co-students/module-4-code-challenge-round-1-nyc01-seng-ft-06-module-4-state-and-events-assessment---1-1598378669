@@ -13,6 +13,8 @@ code {
 }
 
 .container {
+  width: 600px;
+  hight: 600px;
   text-align: center;
   position: fixed;
   top: 50%;
@@ -21,6 +23,18 @@ code {
   transform: translate(-50%, -50%);
 }
 .statement {
+  width: 400px;
+  height: 50px;
   position: relative;
   margin: 40px;
+}
+
+.image-container {
+  width: 600px;
+  hight: 500px;
+}
+
+img {
+  width: 400px;
+  height: 400px;
 }
