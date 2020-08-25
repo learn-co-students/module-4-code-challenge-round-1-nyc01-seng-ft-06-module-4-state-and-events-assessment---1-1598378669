@@ -4,6 +4,17 @@ import {yes,no} from './objects.js'
 
 class App extends React.Component {
 
+  obj = {
+    yes: {
+      "image": yes["yes-image"],
+      "statement": yes["yes-statement"]
+    },
+    no: {
+      "image": no["no-image"],
+      "statement": no["no-statement"]
+    } 
+  }
+
   state = {
     condition: "yes"
   }
@@ -11,7 +22,7 @@ class App extends React.Component {
   clickHandler = () => {
     this.setState(previousState => {
       if (previousState.condition === "yes") {
-        return {condition:"no"}
+        return {condition: "no"}
       } else { 
         return {condition: "yes"}
       }
@@ -21,12 +32,11 @@ class App extends React.Component {
   render(){  
     return (
       <div className=".App">
-        {this.state.condition === "yes" ? <h3>{yes["yes-statement"]}</h3> : <h3>{no["no-statement"]}</h3>}
-        {this.state.condition === "yes" ? <img alt={yes["yes-statement"]} src={yes["yes-image"]} onClick={this.clickHandler} />: <img  alt={no["no-statement"]} src={no["no-image"]} onClick={this.clickHandler} />}
+         <h3>{this.obj[this.state.condition].statement}</h3> 
+         <img alt={this.obj[this.state.condition].image} src={this.obj[this.state.condition].image} onClick={this.clickHandler} />
       </div>
     )
   }
-
 }
 
 export default App;
